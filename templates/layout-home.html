@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dog-Cat Classification</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.min.js') }}"></script> -->
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css_2/style_2.css') }}"> -->
+    </head>
+    <body>
+        <h1 id="title">Dog-Cat Classification</h1>
+        <div id="main-body">
+            <form enctype="multipart/form-data" method="POST" action="/">
+                <input type="file" name="file"> <br><br>
+                <input type="submit" name="submit" value="SUBMIT"> <br>
+                <p id="result">
+                    <span style="font-weight: bold">RESULT:</span> {{ result }} ---- <span style="font-weight: bold">RUN-TIME:</span> {{ run_time }} (s)
+                </p>
+            </form>
+        </div>
+
+        <!-- inserting these scripts at the end to be able to use all the elements in the DOM
+        <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+        <script src="../static/js_2/app_2.js"></script> -->
+    </body>
+</html>
